@@ -1,0 +1,61 @@
+/* Global rules*/
+:root {
+  --Slate-300: hsl(212, 45%, 89%);
+  --Slate-500: hsl(216, 15%, 48%);
+  --Slate-900: hsl(218, 44%, 22%);
+  --mini-padding: 16px;
+  --mid-padding: 24px;
+  --large-padding: 40px;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: var(--Slate-300);
+  font-family: "Outfit", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 120%;
+}
+p {
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0.2px;
+}
+/* start box */
+.box {
+  background-color: white;
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  height: 499px;
+  padding: var(--mini-padding);
+  padding-bottom: var(--large-padding);
+}
+.box img {
+  width: 288px;
+  height: 288px;
+  border-radius: 6px;
+  margin-bottom: var(--mid-padding);
+}
+.box .text {
+  padding: 0 16px;
+}
+.box .text h2 {
+  margin-bottom: var(--mini-padding);
+  color: var(--Slate-900);
+}
+.box .text p {
+  text-align: center;
+  color: var(--Slate-500);
+}
+/* end box */
